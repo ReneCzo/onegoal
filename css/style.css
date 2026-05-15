@@ -32,11 +32,12 @@ body{height:100vh;display:flex;flex-direction:column;font-family:Arial,sans-seri
 .le{display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid rgba(255,255,255,.08)}
 .t1g{color:#a89dff}.t2g{color:#ff8a80}
 .lrh{font-size:.7rem;font-weight:bold;text-align:center;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase;margin:6px 0 2px;border-top:1px solid rgba(255,255,255,.15);padding-top:5px}
-.ov{display:none;position:fixed;inset:0;color:white;flex-direction:column;align-items:center;justify-content:center;z-index:100;text-align:center;gap:8px;padding:20px;overflow-y:auto}
+.ov{display:none;position:fixed;inset:0;color:white;flex-direction:column;align-items:center;justify-content:center;z-index:100;text-align:center;gap:8px;padding:calc(20px + env(safe-area-inset-top)) calc(20px + env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom)) calc(20px + env(safe-area-inset-left));overflow-y:auto}
 .ov.show{display:flex}
 #wo{background:rgba(0,0,0,.85)}
 #ro{background:rgba(0,0,0,.75)}
 #so{background:rgba(0,0,0,.92)}
+#so{justify-content:flex-start}
 .ov h1{font-size:2.5rem}.ov h2{font-size:1.8rem}.ov p{font-size:1rem;opacity:.8}
 .ov button{margin-top:6px;padding:10px 24px;border:none;border-radius:24px;background:white;color:#1a1a2e;font-size:1rem;font-weight:bold;cursor:pointer}
 .obtn{background:rgba(255,255,255,.2)!important;color:white!important}
@@ -77,4 +78,7 @@ body{height:100vh;display:flex;flex-direction:column;font-family:Arial,sans-seri
 .dot{width:8px;height:8px}
 .fxb{padding:6px 12px;font-size:.8rem}
 #lgp{bottom:calc(48px + env(safe-area-inset-bottom));max-height:220px}
+}
+@media (orientation:landscape){
+#ga{padding-bottom:calc(58px + env(safe-area-inset-bottom))}
 }
