@@ -67,7 +67,7 @@ body{height:100vh;display:flex;flex-direction:column;font-family:Arial,sans-seri
 #swp{width:40px;height:40px;font-size:1.1rem}
 .team{justify-content:space-evenly;padding:4px 10px}
 .tn{font-size:1rem;min-height:0;margin-bottom:0;text-align:center;padding:0 8px}
-/* Keep the scoreboard clear of the bottom controls on short landscape phones such as the Galaxy S23 Ultra. */
+/* Keep the scoreboard clear of the bottom controls on short landscape phones such as the Samsung S23 Ultra. */
 .sc{font-size:min(19.5vw,32vh)}
 @supports (height:100dvh){.sc{font-size:min(19.5vw,32dvh)}}
 .hi{display:none}
