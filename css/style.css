@@ -13,6 +13,7 @@ body{height:100vh;display:flex;flex-direction:column;font-family:Arial,sans-seri
 #t2{background:#e74c3c;color:white}
 .tn{font-size:1.4rem;font-weight:bold;margin-bottom:12px;opacity:.85;min-height:60px;display:flex;align-items:center;justify-content:center}
 .sc{font-size:min(22vw,36vh);font-weight:bold;line-height:1}
+@supports (height:100dvh){.sc{font-size:min(22vw,36dvh)}}
 .hi{font-size:.75rem;margin-top:6px;margin-bottom:10px;opacity:.6}
 .logo{width:130px;height:60px;max-height:60px;object-fit:contain;margin-bottom:12px;pointer-events:none}
 .rows{display:flex;flex-direction:column;gap:5px;align-items:center}
@@ -74,4 +75,9 @@ body{height:100vh;display:flex;flex-direction:column;font-family:Arial,sans-seri
 .dot{width:8px;height:8px}
 .fxb{padding:6px 12px;font-size:.8rem}
 #lgp{bottom:calc(48px + env(safe-area-inset-bottom));max-height:220px}
+}
+@supports (height:100dvh){
+@media (orientation:landscape) and (max-height:430px){
+.sc{font-size:min(19.5vw,32dvh)}
+}
 }
