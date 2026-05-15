@@ -1,5 +1,5 @@
 *{margin:0;padding:0;box-sizing:border-box}
-body{min-height:100vh;min-height:100dvh;height:100vh;height:100dvh;display:flex;flex-direction:column;font-family:Arial,sans-serif;user-select:none;overflow:hidden;background:#1a1a2e;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+body{min-height:100vh;height:100vh;min-height:100dvh;height:100dvh;display:flex;flex-direction:column;font-family:Arial,sans-serif;user-select:none;overflow:hidden;background:#1a1a2e;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
 #sb{display:flex;justify-content:space-between;align-items:center;padding:8px 16px;background:#1a1a2e;color:white;font-size:.85rem}
 #timer{font-size:1.1rem;font-weight:bold;letter-spacing:2px}
 #tt{background:rgba(255,255,255,.2);border:none;color:white;border-radius:12px;padding:4px 10px;font-size:.8rem;cursor:pointer}
@@ -59,7 +59,6 @@ body{min-height:100vh;min-height:100dvh;height:100vh;height:100dvh;display:flex;
 @keyframes kbpulse{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(-50%,-50%) scale(1.2)}}
 .notransition{transition:none!important}
 @media (orientation:landscape) and (max-height:430px){
-body{overflow:auto}
 #sb{padding:6px 12px;font-size:.75rem}
 #timer{font-size:1rem;letter-spacing:1px}
 #ga{padding:4px 0 calc(58px + env(safe-area-inset-bottom))}
