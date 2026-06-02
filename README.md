@@ -2,6 +2,8 @@
 
 Ein mobiler Torstand-Zähler für Tischkicker im **Race-to-21-Modus** – optimiert für den Einsatz auf dem Smartphone direkt am Tisch.
 
+## ⚽ [Hier loslegen!](https://reneczo.github.io/onegoal/Goalcounter.html)
+
 ## Features
 
 - **Race to 21** – Zählt Tore bis 21, aufgeteilt in 3 Paarungen (Milestone bei 7, 14 und 21 Toren)
@@ -17,13 +19,9 @@ Ein mobiler Torstand-Zähler für Tischkicker im **Race-to-21-Modus** – optimi
 
 ## Verwendung
 
-Einfach `index.html` im Browser öffnen – keine Installation, kein Build-Schritt, keine Abhängigkeiten.
+Einfach `Goalcounter.html` im Browser öffnen – keine Installation, kein Build-Schritt, keine Abhängigkeiten.
 
-```
-open index.html
-```
-
-Oder direkt unter [og1o.com](https://www.og1o.com) aufrufen.
+Oder direkt unter [reneczo.github.com](https://reneczo.github.io/onegoal/Goalcounter.html) aufrufen.
 
 ## PWA-Hinweis (Android Vollbild)
 
@@ -43,14 +41,15 @@ Für die Installation und den Vollbildmodus unter Android müssen folgende Bedin
 
 ## Vorkonfigurierte Teams
 
-| Name        | Logo                  |
-|-------------|-----------------------|
-| one.O       | one.O SVG Logo        |
-| Hermes      | Hermes Logo           |
-| Risk.Ident  | Risk Ident Logo       |
-| OTTO        | OTTO Logo             |
-| mindline    | mindline Logo         |
-| Eigenes     | URL oder Datei-Upload |
+| Name               | Logo                    |
+|--------------------|-------------------------|
+| one.O              | one.O SVG Logo          |
+| Hermes             | Hermes Logo             |
+| Risk.Ident         | Risk Ident Logo         |
+| OTTO               | OTTO Logo               |
+| mindline           | mindline Logo           |
+| Mobil Krankenkasse | Mobil Krankenkasse Logo |
+| Eigenes            | URL oder Datei-Upload   |
 
 ## Tech Stack
 
