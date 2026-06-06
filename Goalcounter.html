@@ -43,7 +43,7 @@
 <div id="wo" class="ov"><h1 id="wt"></h1><p id="ws"></p><p id="wti"></p><button onclick="resetScores()">🔄 Neues Spiel</button><button class="obtn" onclick="dismissWinner()">📋 Protokoll ansehen</button></div>
 <div id="so" class="ov">
   <h2>⚙️ Teams einstellen</h2>
-  <label>🏠 Heimteam</label><div id="t1p"></div>
+  <label>🏠 Heimteam</label><select class="tsel" id="t1s" onchange="T1PickChange()"></select> 
   <div id="cw"><label>Logo-URL</label><input type="text" id="curl" placeholder="https://..."><label>Oder Datei</label><input type="file" id="cfile" accept="image/*" style="color:white;font-size:.8rem;margin-top:4px"></div>
   <label>Farbe Heimteam</label><div class="crow" id="c1"></div>
   <label>Gastteam Name</label><input type="text" id="ni" placeholder="Team 2" maxlength="20">

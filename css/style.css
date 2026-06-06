@@ -39,6 +39,7 @@ body{height:100vh;display:flex;flex-direction:column;font-family:Arial,sans-seri
 #so{background:rgba(0,0,0,.92);justify-content:flex-start}
 .ov h1{font-size:2.5rem}.ov h2{font-size:1.8rem}.ov p{font-size:1rem;opacity:.8}
 .ov button{margin-top:6px;padding:10px 24px;border:none;border-radius:24px;background:white;color:#1a1a2e;font-size:1rem;font-weight:bold;cursor:pointer}
+.ov select{margin-top:6px;padding:10px 24px;border:none;border-radius:24px;background:white;color:#1a1a2e;font-size:1rem;font-weight:bold;cursor:pointer}
 .obtn{background:rgba(255,255,255,.2)!important;color:white!important}
 .ov label{font-size:.85rem;opacity:.8;display:block;margin-top:10px;margin-bottom:3px}
 .ov input[type=text]{width:200px;padding:8px 12px;border-radius:12px;border:none;font-size:.9rem;text-align:center}
