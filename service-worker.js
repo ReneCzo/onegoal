@@ -1,4 +1,4 @@
-const CACHE_NAME = 'onegoal-v1';
+const CACHE_NAME = 'onegoal-v2';
 const FALLBACK_PAGE = './Goalcounter.html';
 const ASSETS = [
   './',
@@ -19,9 +19,10 @@ self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys =>
       Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key)))
-    )
+    ).then(() => self.clients.claim())
+      .then(() => self.clients.matchAll({includeUncontrolled: false, type: 'window'}))
+      .then(clients => clients.forEach(c => c.postMessage({type: 'SW_UPDATED'})))
   );
-  self.clients.claim();
 });
 
 self.addEventListener('fetch', event => {
