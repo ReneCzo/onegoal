@@ -48,15 +48,8 @@
   <label>Farbe Heimteam</label><div class="crow" id="c1"></div>
   <label>Gastteam Name</label><input type="text" id="ni" placeholder="Team 2" maxlength="20">
   <label>Farbe Gastteam</label><div class="crow" id="c2"></div>
-  <label>Spielphase</label>
-  <div class="swrow">
-    <span>Vorrunde</span>
-    <label class="sw">
-      <input type="checkbox" id="msw">
-      <span class="sld"></span>
-    </label>
-    <span>KO-Phase</span>
-  </div>
+  <label>Spielmodus</label>
+  <div id="modebtns" class="crow"></div>
   <button onclick="saveSettings()" style="margin-top:12px">💾 Speichern</button>
   <button class="obtn" onclick="$('so').classList.remove('show')">Abbrechen</button>
 </div>
@@ -67,6 +60,10 @@ if ('serviceWorker' in navigator) {
     if (window.isSecureContext) {
       navigator.serviceWorker.register('./service-worker.js').catch(err => {
         console.warn('Service Worker registration failed:', err);
+      });
+      var refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!refreshing) { refreshing = true; window.location.reload(); }
       });
     } else {
       console.info('Service Worker skipped: secure context (HTTPS/localhost/127.0.0.1) required.');
